@@ -1,13 +1,14 @@
 default_stages: ["commit"]
+repos:
 -   repo: local
     hooks:
     -   id: mod-readme-rmd-rendered
         name: mod-readme-rmd-rendered
-        entry: inst/mod-readme-rmd-rendered
+        entry: inst/bin/mod-readme-rmd-rendered
         language: script
     -   id: mod-codemeta-description-updated
         name: mod-codemeta-description-updated
-        entry: inst/mod-codemeta-description-updated
+        entry: inst/bin/mod-codemeta-description-updated
         language: script
     -   id: forbid-to-commit
         name: Don't commit common R artifacts

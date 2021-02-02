@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/dhersz/dhmisc",
   "issueTracker": "https://github.com/dhersz/dhmisc/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9000",
+  "version": "0.0.0.9003",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -40,5 +40,5 @@
   ],
   "softwareSuggestions": [],
   "softwareRequirements": [],
-  "fileSize": "1.952KB"
+  "fileSize": "2.674KB"
 }
