@@ -6,10 +6,12 @@ repos:
         name: mod-readme-rmd-rendered
         entry: inst/bin/mod-readme-rmd-rendered
         language: script
+        files: 'README\.[Rr]?md$'
     -   id: mod-codemeta-description-updated
         name: mod-codemeta-description-updated
         entry: inst/bin/mod-codemeta-description-updated
         language: script
+        files: '^DESCRIPTION$'
     -   id: forbid-to-commit
         name: Don't commit common R artifacts
         entry: Cannot commit .Rhistory, .Rdata, .csv and .rds.
