@@ -18,9 +18,13 @@ Development version:
 remotes::install_github("dhersz/dhmisc")
 ```
 
-## Functions
+## Utilities
+
+### Functions
 
 The package doesn’t yet contain any functions.
+
+### Pre-commit hooks
 
 The pre-commit hooks were basically copied from the great
 [`precommit`](https://github.com/lorenzwalthert/precommit) package. The
@@ -29,9 +33,17 @@ I had to adapt the shebang a small bit.
 
 To install and use `precommit` please check its [installation and usage
 instructions](https://github.com/lorenzwalthert/precommit#installation).
-After running `precommit::use_precommit()` you will need to adjust the
-`.pre-commit-config.yaml` to use the hooks provided here. An example on
-how to do it will soon be provided.
+After running `precommit::use_precommit()` you will need to configure
+`.pre-commit-config.yaml` as shown below:
+
+``` yaml
+repos:
+-   repo: https://github.com/dhersz/dhmisc
+    rev: v0.0.0.9005
+    hooks:
+    -   id: mod-codemeta-description-updated
+    -   id: mod-readme-rmd-rendered
+```
 
 ## Acknowledgement
 
