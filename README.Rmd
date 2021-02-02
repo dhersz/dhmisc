@@ -30,7 +30,9 @@ remotes::install_github("dhersz/dhmisc")
 
 ### Functions
 
-The package doesn't yet contain any functions.
+- `bump_pkg_version()`
+
+Automatically bumps package version (either the major, minor, patch or dev component) and conditionally updates package metadata. Helper around `desc::desc_bump_version()` and `codemetar::write_codemeta()`.
 
 ### Pre-commit hooks
 
