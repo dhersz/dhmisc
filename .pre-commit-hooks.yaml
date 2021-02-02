@@ -1,0 +1,12 @@
+-   id: mod-readme-rmd-rendered
+    name: mod-readme-rmd-rendered
+    description: make sure README.Rmd hasn't been edited more recently than README.md
+    entry: inst/bin/mod-readme-rmd-rendered
+    language: script
+    files: 'README\.[Rr]?md$'
+-   id: mod-codemeta-description-updated
+    name: mod-codemeta-description-updated
+    description: make sure codemeta.json is in sync with DESCRIPTION. It should be run after use-tidy-description.
+    entry: inst/bin/mod-codemeta-description-updated
+    language: script
+    files: '^DESCRIPTION$'
