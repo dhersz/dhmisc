@@ -1,3 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^codemeta\.json$
+^\.pre-commit-config\.yaml$
+^\.pre-commit-hooks\.yaml$
