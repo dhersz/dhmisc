@@ -3,3 +3,4 @@
 ^codemeta\.json$
 ^\.pre-commit-config\.yaml$
 ^\.pre-commit-hooks\.yaml$
+^README\.Rmd$
