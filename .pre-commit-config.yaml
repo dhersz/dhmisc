@@ -17,3 +17,7 @@ repos:
         entry: Cannot commit .Rhistory, .Rdata, .csv and .rds.
         language: fail
         files: '\.Rhistory|\.csv|\.RData|\.Rds|\.rds$'
+    -   id: version-bumped
+        name: version-bumped
+        entry: inst/bin/version-bumped
+        language: script

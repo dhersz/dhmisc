@@ -10,3 +10,8 @@
     entry: inst/bin/mod-codemeta-description-updated
     language: script
     files: '^DESCRIPTION$'
+-   id: version-bumped
+    name: version-bumped
+    description: make sure that package version was bumped.
+    entry: inst/bin/version-bumped
+    language: script

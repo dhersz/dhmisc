@@ -1,0 +1,13 @@
+#!/usr/bin/env Rscript
+
+last_commit_tree         <- git2r::tree(git2r::commits()[[1]])
+last_commit_desc_content <- git2r::content(last_commit_tree["DESCRIPTION"])
+
+last_commit_desc_obj <- desc::description$new(text = last_commit_desc_content)
+last_commit_version  <- last_commit_desc_obj$get_version()
+
+current_desc_obj <- desc::description$new()
+current_version  <- current_desc_obj$get_version()
+
+if (current_version == last_commit_version)
+  stop("Package version was not bumped; please run dhmisc::bump_pkg_version().", call. = FALSE)

@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/dhersz/dhmisc",
   "issueTracker": "https://github.com/dhersz/dhmisc/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.0.0.9008",
+  "version": "0.0.0.9009",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -63,9 +63,21 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=desc"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "git2r",
+      "name": "git2r",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=git2r"
     }
   ],
-  "fileSize": "9.276KB",
+  "fileSize": "9.84KB",
   "readme": "https://github.com/dhersz/dhmisc/blob/master/README.md",
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental"
 }
