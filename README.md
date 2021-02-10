@@ -54,8 +54,8 @@ repos:
     computer.
 
   - `version-bumped`  
-    Checks if the package version has been bumped from the last commit,
-    and fails if not.
+    Checks if the package version has been bumped from last commit and
+    if both `DESCRIPTION` and `codemeta.json` are staged for commit.
 
 ## Acknowledgement
 

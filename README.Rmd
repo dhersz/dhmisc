@@ -51,7 +51,7 @@ repos:
   Copies of `codemeta-description-updated` and `readme-rmd-rendered`, available in `{precommit}`, with adapted shebang to work on my computer.
 
 - `version-bumped` \
-  Checks if the package version has been bumped from the last commit, and fails if not.
+  Checks if the package version has been bumped from last commit and if both `DESCRIPTION` and `codemeta.json` are staged for commit.
 
 ## Acknowledgement
 
