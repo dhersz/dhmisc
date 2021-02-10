@@ -11,3 +11,8 @@ current_version  <- current_desc_obj$get_version()
 
 if (current_version == last_commit_version)
   stop("Package version was not bumped; please run dhmisc::bump_pkg_version().", call. = FALSE)
+
+staged_files <- unlist(git2r::status()$staged)
+
+if (!all(c("DESCRIPTION", "codemeta.json") %in% staged_files))
+  stop("Both 'DESCRIPTION' and 'codemeta.json' need to be staged for commit.", call. = FALSE)
