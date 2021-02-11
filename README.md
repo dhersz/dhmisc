@@ -41,7 +41,7 @@ list):
 ``` yaml
 repos:
 -   repo: https://github.com/dhersz/dhmisc
-    rev: v0.0.0.9009
+    rev: v0.0.0.9012
     hooks:
     -   id: mod-codemeta-description-updated
     -   id: mod-readme-rmd-rendered
