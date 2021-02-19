@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/dhersz/dhmisc",
   "issueTracker": "https://github.com/dhersz/dhmisc/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.0.0.9014",
+  "version": "0.0.0.9015",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -77,7 +77,6 @@
       "sameAs": "https://CRAN.R-project.org/package=git2r"
     }
   ],
-  "fileSize": "10.854KB",
-  "readme": "https://github.com/dhersz/dhmisc/blob/master/README.md",
+  "fileSize": "10.784KB",
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental"
 }

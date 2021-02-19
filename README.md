@@ -22,7 +22,7 @@ remotes::install_github("dhersz/dhmisc")
 
 ### Functions
 
-  - `bump_pkg_version()`  
+-   `bump_pkg_version()`  
     Automatically bumps package version (either the major, minor, patch
     or dev component) and conditionally updates package metadata. Helper
     around `desc::desc_bump_version()` and
@@ -41,19 +41,19 @@ list):
 ``` yaml
 repos:
 -   repo: https://github.com/dhersz/dhmisc
-    rev: v0.0.0.9012
+    rev: v0.0.0.9014
     hooks:
     -   id: mod-codemeta-description-updated
     -   id: mod-readme-rmd-rendered
     -   id: version-bumped
 ```
 
-  - `mod-codemeta-description-updated` and `mod-readme-rmd-rendered`  
+-   `mod-codemeta-description-updated` and `mod-readme-rmd-rendered`  
     Copies of `codemeta-description-updated` and `readme-rmd-rendered`,
     available in `{precommit}`, with adapted shebang to work on my
     computer.
 
-  - `version-bumped`  
+-   `version-bumped`  
     Checks if the package version has been bumped from last commit and
     if both `DESCRIPTION` and `codemeta.json` are staged for commit.
 

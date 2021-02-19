@@ -40,7 +40,7 @@ To use pre-commit hooks in R packages please see `{precommit}` R package [instal
 ```{yaml, eval=FALSE}
 repos:
 -   repo: https://github.com/dhersz/dhmisc
-    rev: v0.0.0.9012
+    rev: v0.0.0.9014
     hooks:
     -   id: mod-codemeta-description-updated
     -   id: mod-readme-rmd-rendered
