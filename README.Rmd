@@ -23,6 +23,10 @@ knitr::opts_chunk$set(
 Development version:
 
 ```{r, eval=FALSE}
+install.packages("dhmisc", repos = "https://dhersz.r-universe.dev")
+
+# or
+# install.packages("remotes")
 remotes::install_github("dhersz/dhmisc")
 ```
 
@@ -33,11 +37,14 @@ remotes::install_github("dhersz/dhmisc")
 - `bump_pkg_version()` \
   Automatically bumps package version (either the major, minor, patch or dev component) and conditionally updates package metadata. Helper around `desc::desc_bump_version()` and `codemetar::write_codemeta()`.
 
+- `brazil_rapid_transit()` \
+  Downloads Brazil's rapid transit corridors and stops made available by ITDP Brasil at [Mobilidados](https://mobilidados.org.br/map-of-rapid-transit-in-brazil).
+  
 ### Pre-commit hooks
 
 To use pre-commit hooks in R packages please see `{precommit}` R package [installation and usage instructions](https://github.com/lorenzwalthert/precommit#installation). To use the hooks made available here you will need to run `precommit::use_precommit()` and configure `.pre-commit-config.yaml` as shown below (please remove any hooks you don't want to use from the list):
 
-```{yaml, eval=FALSE}
+```yaml
 repos:
 -   repo: https://github.com/dhersz/dhmisc
     rev: v0.0.0.9014

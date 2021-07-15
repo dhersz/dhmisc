@@ -1,7 +1,7 @@
 Type: Package
 Package: dhmisc
 Title: Dhersz Utility Functions
-Version: 0.0.0.9015
+Version: 0.0.0.9016
 Authors@R: 
     person(given = "Daniel",
            family = "Herszenhut",
@@ -14,8 +14,11 @@ URL: https://github.com/dhersz/dhmisc
 BugReports: https://github.com/dhersz/dhmisc/issues
 Imports:
     codemetar,
+    data.table,
     desc,
-    git2r
+    git2r,
+    sf
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1

@@ -15,6 +15,10 @@ in existing R packages don’t fulfill my needs.
 Development version:
 
 ``` r
+install.packages("dhmisc", repos = "https://dhersz.r-universe.dev")
+
+# or
+# install.packages("remotes")
 remotes::install_github("dhersz/dhmisc")
 ```
 
@@ -27,6 +31,11 @@ remotes::install_github("dhersz/dhmisc")
     or dev component) and conditionally updates package metadata. Helper
     around `desc::desc_bump_version()` and
     `codemetar::write_codemeta()`.
+
+-   `brazil_rapid_transit()`  
+    Downloads Brazil’s rapid transit corridors and stops made available
+    by ITDP Brasil at
+    [Mobilidados](https://mobilidados.org.br/map-of-rapid-transit-in-brazil).
 
 ### Pre-commit hooks
 
